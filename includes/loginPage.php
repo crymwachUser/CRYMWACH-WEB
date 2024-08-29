@@ -68,6 +68,16 @@ if (isset($_SESSION['userid'])) {
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         const auth = firebase.auth();
+        Swal.fire({
+          title: 'Loading...',
+          text: 'Please wait while we log you in',
+          allowOutsideClick: false, // Disable clicking outside the modal
+          allowEscapeKey: false, // Disable the escape key
+          allowEnterKey: false, // Disable the enter key
+          didOpen: () => {
+            Swal.showLoading(); // Show the loading animation
+          }
+        });
         auth.signInWithEmailAndPassword(email, password)
           .then((userCredential) => {
             $.ajax({
@@ -80,7 +90,7 @@ if (isset($_SESSION['userid'])) {
                 window.location.reload();
                 const data = JSON.parse(response);
                 const usertype = data.usertype;
-                
+
                 switch (usertype) {
                   case "mswd":
                     window.location.href = "./HomePage.php";
@@ -90,7 +100,7 @@ if (isset($_SESSION['userid'])) {
                     break;
                   default:
                     break;
-                } 
+                }
               },
               error: function(jqXHR, textStatus, errorThrown) {
                 console.log(textStatus);
