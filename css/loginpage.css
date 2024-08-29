@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #384047;
+  background: #0269b2;
+  /*  background: linear-gradient(to right, #19bbd2, #2778ee);*/
+  /*background: linear-gradient(to right, #4aabe2, #80c73d, #dc108b, #99188c);*/
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+form {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="password"],
+input[type="email"] {
+  background: rgb(255, 255, 255);
+  border: 1px solid silver;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  /* background-color: #2e9def;*/
+  background: #e6262c;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  /*border: 1px solid #2e9def;*/
+  border: none;
+  cursor: pointer;
+  outline: none;
+  /* border-width: 1px 1px 3px;*/
+  /*  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;*/
+  margin-bottom: 10px;
+}
+button:hover {
+  background: #ff4d4d; /* Awesome hex color red */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.3),
+    0 6px 20px rgba(255, 77, 77, 0.3); /* Adds a shadow for a more dynamic effect */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+/*
+button:hover{
+    background-color: #0056b3;
+     background-color: #0056b3;
+}
+*/
+.logo {
+  max-width: 180px; /* Adjust the maximum width of the logo */
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+  background: #0269b2;
+  /*  background-color: #007bff;*/
+  color: #fff;
+}
+#email {
+  background-image: url("./icon/icons8-email-48.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 8px 12px;
+  padding-left: 35px;
+}
+input[type="password"] {
+  background-image: url("./icon/icons8-lock-50.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 8px 9px;
+  padding-left: 35px;
+}
+
+@media (max-width: 768px) {
+  .signup-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+}

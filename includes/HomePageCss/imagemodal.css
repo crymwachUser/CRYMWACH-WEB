@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+/* Modal Styles */
+.imagemodal, .anonymousimagemodal, .anonymousbarangayimageModal {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    animation: fadeIn 0.3s;
+}
+
+.anonymousimagemodal{
+    display: none; 
+}
+
+.imagemodal{
+    display: none; 
+}
+
+.anonymousbarangayimageModal{
+    display: none;
+}
+
+.image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    animation: slideIn 0.3s;
+}
+
+.image-modal-close, .anonymous-image-modal-close, .anonymous-barangay-image-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #ff0202;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-modal-close, .anonymous-image-modal-close, .anonymous-barangay-image-modal-close:hover,
+.image-modal-close, .anonymous-image-modal-close, .anonymous-barangay-image-modal-close:focus {
+    color: rgba(255, 0, 0, 0.745);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.download-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #007bff;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-icon:hover {
+    color: #0056b3;
+    font-size: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px);}
+    to {transform: translateY(0);}
+}
+
+
+
+/* Breakpoints */
+@media (max-width: 1200px) {
+     .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 90%;
+        margin-top: 10%;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+     .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 90%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 90%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 750px) {
+    .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 655px) {
+    .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 50%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+     .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 80%;
+        margin-right: 20px;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 80%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 360px) {
+    .image-modal-content, .anonymous-image-modal-content, .anonymous-barangay-image-modal-content{
+        width: 80%;
+        height: 50%;
+       margin-right: 10px;
+        margin-top: 20%;
+    }
+}

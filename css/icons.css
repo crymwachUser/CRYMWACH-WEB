@@ -1,0 +1,68 @@
+#fullname {
+  background-image: url("./icon/user.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+
+#gender {
+  background-image: url("./icon/user.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+
+#barangay {
+  background-image: url("./icon/icons8-address-48-blue.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+
+#complete-address {
+  background-image: url("./icon/icons8-address-94.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+
+#phonenumber {
+  background-image: url("./icon/icons8-phone-50.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+#email {
+  background-image: url("./icon/icons8-email-48.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+#password {
+  background-image: url("./icon/icons8-lock-50.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}
+#confirm-password {
+  background-image: url("./icon/icons8-lock-50.png");
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  background-size: 20px;
+  background-position: 8px 8px;
+  padding-left: 35px;
+}

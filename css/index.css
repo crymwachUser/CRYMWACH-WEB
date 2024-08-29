@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+/* WebKit */
+::-webkit-scrollbar {
+  width: 0px;
+}
+.left-section {
+  flex: 1;
+  background: #0269b2;
+  /* background: linear-gradient(to right, #19bbd2, #2778ee);*/
+  /* background: linear-gradient(to right, #4aabe2, #80c73d, #dc108b, #99188c);*/
+  /*background: rgba(226, 79, 27, 0.5);*/
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.left-image {
+  margin-top: 50px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome-image,
+.register-image {
+  height: 200px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description,
+.register-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.register-button {
+  background: #e6262c;
+  /*background: linear-gradient(to right, #19bbd2, #2778ee); */
+  /* background: #0269b2;*/
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+.register-heading{
+  color: #0269b2;
+}
+
+.text-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section,
+.right-section {
+  padding: 20px;
+}
+
+.welcome-image,
+.register-image {
+  height: 200px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description,
+.register-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.login-button {
+  /* background-color: #ffffff;  */
+  background: #e6262c;
+  border: none;
+  /* color: #2e9def;*/
+  color: white;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  outline: none;
+}
+
+.login-button:hover {
+  background: #ff4d4d; /* Awesome hex color red */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.3),
+    0 6px 20px rgba(255, 77, 77, 0.3); /* Adds a shadow for a more dynamic effect */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+/*
+.login-button:hover {
+  background: #0269b2;
+  background: #2e9def;
+   background: linear-gradient(
+    to right,
+    #19bdd265,
+    #2777ee77
+  ); 
+  color: white;
+}
+*/
+.register-button:hover {
+  background: #ff4d4d; /* Awesome hex color red */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.3),
+    0 6px 20px rgba(255, 77, 77, 0.3); /* Adds a shadow for a more dynamic effect */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+/*.register-button:hover {
+  background: #0269b29b;
+  background: #2e9def;
+  background: linear-gradient(
+    to right,
+    #19bdd265,
+    #2777ee77
+  );  
+  color: white;
+} 
+*/
+.text-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .left-section,
+  .right-section {
+    flex: 1;
+    padding: 20px;
+  }
+}

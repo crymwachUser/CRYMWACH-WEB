@@ -1,0 +1,147 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.modal-content {
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.modal-header {
+  padding: 20px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0269b2;
+  /*background: linear-gradient(to right, #19bbd2, #2778ee); */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.close {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+}
+
+.chat-messages {
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.form-container {
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.sender {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  max-width: 110%;
+  position: relative;
+  font-size: 16px;
+}
+
+.receiver {
+  background-color: #e5e5ea;
+  color: #000;
+  align-self: flex-start;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  max-width: 80%;
+  position: relative;
+  font-size: 16px;
+}
+.name {
+  color: grey;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.time {
+  font-size: 12px;
+  color: #888;
+  position: absolute;
+  bottom: -18px;
+  right: 10px;
+}
+
+.chat-form {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.chat-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #e6262c;
+  /*background-color: #007bff;*/
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.sendbtton:hover {
+  background: #ff4d4d; /* Awesome hex color red */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.3),
+    0 6px 20px rgba(255, 77, 77, 0.3); /* Adds a shadow for a more dynamic effect */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+  /*background-color: #218838;*/
+}

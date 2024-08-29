@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Modal Styles */
+.smsmodal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s;
+}
+
+.sms-modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  animation: slideIn 0.5s;
+  position: relative;
+}
+
+.sms-close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sms-close-modal:hover,
+.sms-close-modal:focus {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Form Styles */
+.sms-form-group {
+  margin-bottom: 15px;
+}
+
+.sms-form-group .smslabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sms-form-group .smsinput,
+.sms-form-group .smsText {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sms-submit-bttn {
+  background: #e6262c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sms-submit-bttn:hover {
+  background: #ff4d4d; /* Awesome hex color red */
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.3),
+    0 6px 20px rgba(255, 77, 77, 0.3); /* Adds a shadow for a more dynamic effect */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sms-modal-form {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sms-modal-form {
+    width: 95%;
+    margin-top: 2%;
+  }
+}
