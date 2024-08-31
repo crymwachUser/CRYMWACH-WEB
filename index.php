@@ -22,7 +22,7 @@ if (isset($_SESSION['userid'])) {
       header("Location:./index.php");
       break;
   }
-} 
+}
 ?>
 
 <!DOCTYPE html>
@@ -101,7 +101,7 @@ if (isset($_SESSION['userid'])) {
 
         </select>
         <input type="text" placeholder="Complete Address" class="text-input" id="complete-address" required>
-        <input type="tel" placeholder="Phonenumber" maxlength="10" pattern="^[1-9]\d{9}$"  class="text-input" id="phonenumber" required>
+        <input type="tel" placeholder="Phonenumber" maxlength="10" pattern="^[1-9]\d{9}$" class="text-input" id="phonenumber" required>
         <input type="email" placeholder="Email" class="text-input" id="email" required>
         <input type="password" placeholder="Password" class="text-input" id="password" required>
         <button type="submit" class="register-button">Register</button>
@@ -129,10 +129,19 @@ if (isset($_SESSION['userid'])) {
         const phonenumber = document.getElementById("phonenumber").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
-
-
         // firebase authentication area
         const auth = firebase.auth();
+        
+        Swal.fire({
+          title: 'Loading...',
+          text: 'Please wait while we register you in',
+          allowOutsideClick: false, // Disable clicking outside the modal
+          allowEscapeKey: false, // Disable the escape key
+          allowEnterKey: false, // Disable the enter key
+          didOpen: () => {
+            Swal.showLoading(); // Show the loading animation
+          }
+        });
         auth.createUserWithEmailAndPassword(email, password)
           .then((userCredential) => {
             $.ajax({
@@ -159,7 +168,7 @@ if (isset($_SESSION['userid'])) {
             regist.push().set({
               userid: userid,
               usertype: usertype,
-              fullname: fullname, 
+              fullname: fullname,
               gender: gender,
               barangay: barangay,
               address: completeAddress,
